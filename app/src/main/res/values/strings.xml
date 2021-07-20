@@ -10,4 +10,11 @@
     <string name="actor_name_1">Джейсон Стэйтем</string>
     <string name="actor_name_3">Холт Маккэллани</string>
     <string name="age">18+</string>
+    <string name="empty_star">empty star</string>
+    <string name="star">star</string>
+    <string name="makellani">makellani</string>
+    <string name="harnnet">harnnet</string>
+    <string name="return_home">return home</string>
+    <string name="return_profile">return profile</string>
+    <string name="image_of_the_film">Image of the film</string>
 </resources>
