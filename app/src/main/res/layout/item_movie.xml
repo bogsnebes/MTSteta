@@ -4,16 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:layout_marginBottom="55dp">
+    android:layout_marginBottom="55dp"
+    android:background="@drawable/image_bg">
 
     <ImageView
         android:id="@+id/movie_image"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="150dp"
+        android:layout_height="216dp"
         android:contentDescription="@string/image_of_the_film"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/recycle" />
+        app:srcCompat="@drawable/recycleMovie" />
 
     <TextView
         android:id="@+id/movie_title"
@@ -42,56 +43,56 @@
 
     <ImageView
         android:id="@+id/star_1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="14dp"
+        android:layout_height="13dp"
         android:layout_marginTop="15dp"
         app:layout_constraintStart_toStartOf="@+id/movie_description"
         app:layout_constraintTop_toBottomOf="@+id/movie_description"
-        app:srcCompat="@drawable/ic__star"
+        app:srcCompat="@drawable/ic_fill_star"
         tools:ignore="VectorDrawableCompat" />
 
     <ImageView
         android:id="@+id/star_2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="14dp"
+        android:layout_height="13dp"
         android:layout_marginStart="2dp"
         android:layout_marginTop="15dp"
         app:layout_constraintStart_toEndOf="@+id/star_1"
         app:layout_constraintTop_toBottomOf="@+id/movie_description"
-        app:srcCompat="@drawable/ic__star"
+        app:srcCompat="@drawable/ic_fill_star"
         tools:ignore="VectorDrawableCompat" />
 
     <ImageView
         android:id="@+id/star_3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="14dp"
+        android:layout_height="13dp"
         android:layout_marginStart="2dp"
         android:layout_marginTop="15dp"
         app:layout_constraintStart_toEndOf="@+id/star_2"
         app:layout_constraintTop_toBottomOf="@+id/movie_description"
-        app:srcCompat="@drawable/ic__star"
+        app:srcCompat="@drawable/ic_fill_star"
         tools:ignore="VectorDrawableCompat" />
 
     <ImageView
         android:id="@+id/star_4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="14dp"
+        android:layout_height="13dp"
         android:layout_marginStart="2dp"
         android:layout_marginTop="15dp"
         app:layout_constraintStart_toEndOf="@+id/star_3"
         app:layout_constraintTop_toBottomOf="@+id/movie_description"
-        app:srcCompat="@drawable/ic__color__1_"
+        app:srcCompat="@drawable/ic_empty_star"
         tools:ignore="VectorDrawableCompat" />
 
     <ImageView
         android:id="@+id/star_5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="14dp"
+        android:layout_height="13dp"
         android:layout_marginStart="2dp"
         android:layout_marginTop="15dp"
         app:layout_constraintStart_toEndOf="@+id/star_4"
         app:layout_constraintTop_toBottomOf="@+id/movie_description"
-        app:srcCompat="@drawable/ic__color__1_"
+        app:srcCompat="@drawable/ic_empty_star"
         tools:ignore="VectorDrawableCompat" />
 
     <ImageView
@@ -101,7 +102,7 @@
         app:layout_constraintBottom_toBottomOf="@+id/star_5"
         app:layout_constraintEnd_toEndOf="@+id/movie_image"
         app:layout_constraintTop_toTopOf="@+id/star_5"
-        app:srcCompat="@drawable/ic_ellipse_44"
+        app:srcCompat="@drawable/ic_ellipse"
         tools:ignore="VectorDrawableCompat" />
 
     <TextView
