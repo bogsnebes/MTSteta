@@ -17,4 +17,5 @@
     <string name="return_home">return home</string>
     <string name="return_profile">return profile</string>
     <string name="image_of_the_film">Image of the film</string>
+    <string name="category">category</string>
 </resources>

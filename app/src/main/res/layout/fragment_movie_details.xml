@@ -34,9 +34,9 @@
             android:layout_marginTop="32dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/ic_rectangle_12"
+            app:srcCompat="@drawable/ic_rectangle"
             tools:ignore="VectorDrawableCompat"
-            />
+            android:contentDescription="@string/category" />
 
         <ImageView
             android:id="@+id/ellipse"
@@ -46,8 +46,9 @@
             android:layout_marginEnd="20dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/ic_ellipse_44"
-            tools:ignore="VectorDrawableCompat" />
+            app:srcCompat="@drawable/ic_ellipse"
+            tools:ignore="VectorDrawableCompat"
+            android:contentDescription="@string/age" />
 
         <TextView
             android:id="@+id/date"
@@ -83,7 +84,7 @@
             android:scaleType="centerInside"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/name"
-            app:srcCompat="@drawable/ic__star"
+            app:srcCompat="@drawable/ic_fill_star"
             tools:ignore="VectorDrawableCompat"
             android:contentDescription="@string/star" />
 
@@ -95,7 +96,7 @@
             android:layout_marginTop="8dp"
             app:layout_constraintStart_toEndOf="@+id/star"
             app:layout_constraintTop_toBottomOf="@+id/name"
-            app:srcCompat="@drawable/ic__star"
+            app:srcCompat="@drawable/ic_fill_star"
             tools:ignore="VectorDrawableCompat"
             android:contentDescription="@string/star" />
 
@@ -107,7 +108,7 @@
             android:layout_marginTop="8dp"
             app:layout_constraintStart_toEndOf="@+id/star1"
             app:layout_constraintTop_toBottomOf="@+id/name"
-            app:srcCompat="@drawable/ic__star"
+            app:srcCompat="@drawable/ic_fill_star"
             tools:ignore="VectorDrawableCompat"
             android:contentDescription="@string/star" />
 
@@ -119,7 +120,7 @@
             android:layout_marginTop="8dp"
             app:layout_constraintStart_toEndOf="@+id/star2"
             app:layout_constraintTop_toBottomOf="@+id/name"
-            app:srcCompat="@drawable/ic__star"
+            app:srcCompat="@drawable/ic_fill_star"
             tools:ignore="VectorDrawableCompat"
             android:contentDescription="@string/star" />
 
@@ -131,7 +132,7 @@
             android:layout_marginTop="8dp"
             app:layout_constraintStart_toEndOf="@+id/star3"
             app:layout_constraintTop_toBottomOf="@+id/name"
-            app:srcCompat="@drawable/ic__color__1_"
+            app:srcCompat="@drawable/ic_empty_star"
             tools:ignore="VectorDrawableCompat"
             android:contentDescription="@string/empty_star" />
 
@@ -211,10 +212,11 @@
                     android:layout_width="150dp"
                     android:layout_height="196dp"
                     android:layout_marginStart="10dp"
+                    android:background="@drawable/image_bg"
+                    android:contentDescription="@string/makellani"
                     app:layout_constraintStart_toEndOf="@+id/statem"
                     app:srcCompat="@drawable/makkelani"
-                    tools:layout_editor_absoluteY="0dp"
-                    android:contentDescription="@string/makellani" />
+                    tools:layout_editor_absoluteY="0dp" />
 
                 <TextView
                     android:id="@+id/actor_name_1"
@@ -244,20 +246,22 @@
                     android:id="@+id/statem"
                     android:layout_width="150dp"
                     android:layout_height="196dp"
+                    android:background="@drawable/image_bg"
+                    android:contentDescription="@string/statemBack"
                     app:srcCompat="@drawable/statem"
                     tools:layout_editor_absoluteX="0dp"
-                    tools:layout_editor_absoluteY="0dp"
-                    android:contentDescription="@string/statemBack" />
+                    tools:layout_editor_absoluteY="0dp" />
 
                 <ImageView
                     android:id="@+id/harnnet"
                     android:layout_width="150dp"
                     android:layout_height="196dp"
                     android:layout_marginStart="8dp"
+                    android:background="@drawable/image_bg"
+                    android:contentDescription="@string/harnnet"
                     app:layout_constraintStart_toEndOf="@+id/makkelani"
                     app:srcCompat="@drawable/harrnet"
-                    tools:layout_editor_absoluteY="0dp"
-                    android:contentDescription="@string/harnnet" />
+                    tools:layout_editor_absoluteY="0dp" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
         </HorizontalScrollView>
@@ -298,7 +302,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                app:srcCompat="@drawable/ic_chel"
+                app:srcCompat="@drawable/ic_profile"
                 tools:ignore="VectorDrawableCompat"
                 android:contentDescription="@string/return_profile" />
         </LinearLayout>
