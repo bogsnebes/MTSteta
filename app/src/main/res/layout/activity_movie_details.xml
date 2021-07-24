@@ -6,7 +6,7 @@
     android:layout_height="wrap_content">
 
     <ImageView
-        android:id="@+id/statemback"
+        android:id="@+id/ivStatemback"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:contentDescription="@string/statemBack"
@@ -27,7 +27,7 @@
         tools:layout_editor_absoluteY="224dp">
 
         <ImageView
-            android:id="@+id/rectangle"
+            android:id="@+id/ivRectangle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
@@ -39,7 +39,7 @@
              />
 
         <ImageView
-            android:id="@+id/ellipse"
+            android:id="@+id/ivEllipse"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="41dp"
@@ -50,7 +50,7 @@
             tools:ignore="VectorDrawableCompat" />
 
         <TextView
-            android:id="@+id/date"
+            android:id="@+id/tvDate"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="14dp"
@@ -59,11 +59,11 @@
             android:text="@string/Date"
             android:textColor="#000000"
             android:textSize="12sp"
-            app:layout_constraintStart_toEndOf="@+id/rectangle"
+            app:layout_constraintStart_toEndOf="@+id/ivRectangle"
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/name"
+            android:id="@+id/tvName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="22dp"
@@ -72,66 +72,66 @@
             android:textColor="#000000"
             android:textSize="20sp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/rectangle" />
+            app:layout_constraintTop_toBottomOf="@+id/ivRectangle" />
 
         <ImageView
-            android:id="@+id/star"
+            android:id="@+id/ivStar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="22dp"
             android:layout_marginTop="8dp"
             android:scaleType="centerInside"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/name"
+            app:layout_constraintTop_toBottomOf="@+id/tvName"
             app:srcCompat="@drawable/ic__star"
             tools:ignore="VectorDrawableCompat" />
 
         <ImageView
-            android:id="@+id/star1"
+            android:id="@+id/ivStar1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="2dp"
             android:layout_marginTop="8dp"
-            app:layout_constraintStart_toEndOf="@+id/star"
-            app:layout_constraintTop_toBottomOf="@+id/name"
+            app:layout_constraintStart_toEndOf="@+id/ivStar"
+            app:layout_constraintTop_toBottomOf="@+id/tvName"
             app:srcCompat="@drawable/ic__star"
             tools:ignore="VectorDrawableCompat" />
 
         <ImageView
-            android:id="@+id/star2"
+            android:id="@+id/ivStar2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="2dp"
             android:layout_marginTop="8dp"
-            app:layout_constraintStart_toEndOf="@+id/star1"
-            app:layout_constraintTop_toBottomOf="@+id/name"
+            app:layout_constraintStart_toEndOf="@+id/ivStar1"
+            app:layout_constraintTop_toBottomOf="@+id/tvName"
             app:srcCompat="@drawable/ic__star"
             tools:ignore="VectorDrawableCompat" />
 
         <ImageView
-            android:id="@+id/star3"
+            android:id="@+id/ivStar3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="2dp"
             android:layout_marginTop="8dp"
-            app:layout_constraintStart_toEndOf="@+id/star2"
-            app:layout_constraintTop_toBottomOf="@+id/name"
+            app:layout_constraintStart_toEndOf="@+id/ivStar2"
+            app:layout_constraintTop_toBottomOf="@+id/tvName"
             app:srcCompat="@drawable/ic__star"
             tools:ignore="VectorDrawableCompat" />
 
         <ImageView
-            android:id="@+id/star4"
+            android:id="@+id/ivStar4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="2dp"
             android:layout_marginTop="8dp"
-            app:layout_constraintStart_toEndOf="@+id/star3"
-            app:layout_constraintTop_toBottomOf="@+id/name"
+            app:layout_constraintStart_toEndOf="@+id/ivStar3"
+            app:layout_constraintTop_toBottomOf="@+id/tvName"
             app:srcCompat="@drawable/ic__color__1_"
             tools:ignore="VectorDrawableCompat" />
 
         <TextView
-            android:id="@+id/description"
+            android:id="@+id/tvDescription"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
@@ -142,10 +142,10 @@
             android:textSize="14sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/star4" />
+            app:layout_constraintTop_toBottomOf="@+id/ivStar4" />
 
         <TextView
-            android:id="@+id/actors"
+            android:id="@+id/tvActors"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="22dp"
@@ -154,10 +154,10 @@
             android:textColor="#000000"
             android:textSize="16sp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/description" />
+            app:layout_constraintTop_toBottomOf="@+id/tvDescription" />
 
         <TextView
-            android:id="@+id/type"
+            android:id="@+id/tvType"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="9dp"
@@ -167,11 +167,11 @@
             android:lineSpacingExtra="0dp"
             android:text="@string/type"
             android:textSize="10sp"
-            app:layout_constraintBottom_toBottomOf="@+id/rectangle"
-            app:layout_constraintEnd_toEndOf="@+id/rectangle"
+            app:layout_constraintBottom_toBottomOf="@+id/ivRectangle"
+            app:layout_constraintEnd_toEndOf="@+id/ivRectangle"
             app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="@+id/rectangle"
-            app:layout_constraintTop_toTopOf="@+id/rectangle"
+            app:layout_constraintStart_toStartOf="@+id/ivRectangle"
+            app:layout_constraintTop_toTopOf="@+id/ivRectangle"
             app:layout_constraintVertical_bias="1.0"
             tools:ignore="SmallSp" />
 
@@ -183,14 +183,14 @@
             android:layout_marginTop="16dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/actors">
+            app:layout_constraintTop_toBottomOf="@+id/tvActors">
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent">
 
                 <TextView
-                    android:id="@+id/actor_name_2"
+                    android:id="@+id/tvActor_name_2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="12dp"
@@ -198,20 +198,20 @@
                     android:textColor="#000000"
                     android:textSize="12sp"
                     android:textStyle="bold"
-                    app:layout_constraintStart_toStartOf="@+id/harnnet"
-                    app:layout_constraintTop_toBottomOf="@+id/harnnet" />
+                    app:layout_constraintStart_toStartOf="@+id/ivHarnnet"
+                    app:layout_constraintTop_toBottomOf="@+id/ivHarnnet" />
 
                 <ImageView
-                    android:id="@+id/makkelani"
+                    android:id="@+id/ivMakkelani"
                     android:layout_width="150dp"
                     android:layout_height="196dp"
                     android:layout_marginStart="10dp"
-                    app:layout_constraintStart_toEndOf="@+id/statem"
+                    app:layout_constraintStart_toEndOf="@+id/ivStatem"
                     app:srcCompat="@drawable/makkelani"
                     tools:layout_editor_absoluteY="0dp" />
 
                 <TextView
-                    android:id="@+id/actor_name_1"
+                    android:id="@+id/tvActor_name_1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="12dp"
@@ -219,11 +219,11 @@
                     android:textColor="#000000"
                     android:textSize="12sp"
                     android:textStyle="bold"
-                    app:layout_constraintStart_toStartOf="@+id/statem"
-                    app:layout_constraintTop_toBottomOf="@+id/statem" />
+                    app:layout_constraintStart_toStartOf="@+id/ivStatem"
+                    app:layout_constraintTop_toBottomOf="@+id/ivStatem" />
 
                 <TextView
-                    android:id="@+id/actor_name_3"
+                    android:id="@+id/tvActor_name_3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="12dp"
@@ -231,11 +231,11 @@
                     android:textColor="#000000"
                     android:textSize="12sp"
                     android:textStyle="bold"
-                    app:layout_constraintStart_toStartOf="@+id/makkelani"
-                    app:layout_constraintTop_toBottomOf="@+id/makkelani" />
+                    app:layout_constraintStart_toStartOf="@+id/ivMakkelani"
+                    app:layout_constraintTop_toBottomOf="@+id/ivMakkelani" />
 
                 <ImageView
-                    android:id="@+id/statem"
+                    android:id="@+id/ivStatem"
                     android:layout_width="150dp"
                     android:layout_height="196dp"
                     app:srcCompat="@drawable/statem"
@@ -243,11 +243,11 @@
                     tools:layout_editor_absoluteY="0dp" />
 
                 <ImageView
-                    android:id="@+id/harnnet"
+                    android:id="@+id/ivHarnnet"
                     android:layout_width="150dp"
                     android:layout_height="196dp"
                     android:layout_marginStart="8dp"
-                    app:layout_constraintStart_toEndOf="@+id/makkelani"
+                    app:layout_constraintStart_toEndOf="@+id/ivMakkelani"
                     app:srcCompat="@drawable/harrnet"
                     tools:layout_editor_absoluteY="0dp" />
 
@@ -255,16 +255,16 @@
         </HorizontalScrollView>
 
         <TextView
-            android:id="@+id/age"
+            android:id="@+id/tvAge"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/age"
             android:textColor="#000000"
             android:textSize="13.8sp"
-            app:layout_constraintBottom_toBottomOf="@+id/ellipse"
-            app:layout_constraintEnd_toEndOf="@+id/ellipse"
-            app:layout_constraintStart_toStartOf="@+id/ellipse"
-            app:layout_constraintTop_toTopOf="@+id/ellipse" />
+            app:layout_constraintBottom_toBottomOf="@+id/ivEllipse"
+            app:layout_constraintEnd_toEndOf="@+id/ivEllipse"
+            app:layout_constraintStart_toStartOf="@+id/ivEllipse"
+            app:layout_constraintTop_toTopOf="@+id/ivEllipse" />
 
         <LinearLayout
             android:layout_width="0dp"
@@ -277,7 +277,7 @@
             app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView">
 
             <ImageView
-                android:id="@+id/returnhome"
+                android:id="@+id/ivReturnhome"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -285,7 +285,7 @@
                 tools:ignore="VectorDrawableCompat" />
 
             <ImageView
-                android:id="@+id/returnprofile"
+                android:id="@+id/ivReturnprofile"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
