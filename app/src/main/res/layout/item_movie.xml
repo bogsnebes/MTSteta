@@ -14,7 +14,7 @@
         android:contentDescription="@string/image_of_the_film"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/recyclemovie" />
+        app:srcCompat="@drawable/recycleMovie" />
 
     <TextView
         android:id="@+id/movie_title"
