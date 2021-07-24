@@ -7,7 +7,7 @@
     android:layout_marginRight="6dp">
 
     <ImageView
-        android:id="@+id/image_category"
+        android:id="@+id/ivCategory"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:contentDescription="@string/category"
@@ -15,15 +15,15 @@
         tools:ignore="MissingConstraints,VectorDrawableCompat" />
 
     <TextView
-        android:id="@+id/text_category"
+        android:id="@+id/tvCategory"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="TextView"
-        android:textColor="#000000"
-        android:textSize="10sp"
-        app:layout_constraintBottom_toBottomOf="@+id/image_category"
-        app:layout_constraintEnd_toEndOf="@+id/image_category"
-        app:layout_constraintStart_toStartOf="@+id/image_category"
-        app:layout_constraintTop_toTopOf="@+id/image_category"
+        android:textColor="@color/black"
+        android:textSize="@dimen/category"
+        app:layout_constraintBottom_toBottomOf="@+id/ivCategory"
+        app:layout_constraintEnd_toEndOf="@+id/ivCategory"
+        app:layout_constraintStart_toStartOf="@+id/ivCategory"
+        app:layout_constraintTop_toTopOf="@+id/ivCategory"
         tools:ignore="SmallSp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

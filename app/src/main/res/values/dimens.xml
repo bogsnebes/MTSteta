@@ -33,4 +33,24 @@
     <dimen name="statemWidth">150dp</dimen>
     <dimen name="statemHeight">196dp</dimen>
     <dimen name="linearLayout">27dp</dimen>
+    <dimen name="filterMarginTop">31dp</dimen>
+    <dimen name="filterMarginEnd">21dp</dimen>
+    <dimen name="popularMarginStart">20dp</dimen>
+    <dimen name="popularMarginTop">22dp</dimen>
+    <dimen name="movieRecycleMarginStart">20dp</dimen>
+    <dimen name="movieRecycleMovieTop">15dp</dimen>
+    <dimen name="movieRecycleMarginEnd">20dp</dimen>
+    <dimen name="categoryRecyclerMarginStart">20dp</dimen>
+    <dimen name="categoryRecyclerMarginTop">12dp</dimen>
+    <dimen name="categoryRecyclerMarginEnd">20dp</dimen>
+    <dimen name="ivMovieWidth">150dp</dimen>
+    <dimen name="ivMovieHeight">216dp</dimen>
+    <dimen name="tvMovieMarginStart">3dp</dimen>
+    <dimen name="tvMovieMarginTop">8dp</dimen>
+    <dimen name="movieDescriptionMarginTop">10dp</dimen>
+    <dimen name="ivStarWidth">14dp</dimen>
+    <dimen name="ivStarHeight">13dp</dimen>
+    <dimen name="ivStarMarginTop">15dp</dimen>
+    <dimen name="rectangleWidth">20dp</dimen>
+    <dimen name="rectangleHeight">20dp</dimen>
 </resources>

@@ -8,112 +8,112 @@
     android:background="@drawable/image_bg">
 
     <ImageView
-        android:id="@+id/movie_image"
-        android:layout_width="150dp"
-        android:layout_height="216dp"
+        android:id="@+id/ivMovie"
+        android:layout_width="@dimen/ivMovieWidth"
+        android:layout_height="@dimen/ivMovieHeight"
         android:contentDescription="@string/image_of_the_film"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/recycleMovie" />
+        app:srcCompat="@drawable/recyclemovie" />
 
     <TextView
-        android:id="@+id/movie_title"
+        android:id="@+id/tvMovie_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="3dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginStart="@dimen/tvMovieMarginStart"
+        android:layout_marginTop="@dimen/tvMovieMarginTop"
         android:text="Гнев человеческий"
-        android:textColor="#000000"
-        android:textSize="14sp"
-        app:layout_constraintEnd_toEndOf="@+id/movie_image"
+        android:textColor="@color/black"
+        android:textSize="@dimen/movie_title"
+        app:layout_constraintEnd_toEndOf="@+id/ivMovie"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/movie_image" />
+        app:layout_constraintTop_toBottomOf="@+id/ivMovie" />
 
     <TextView
-        android:id="@+id/movie_description"
+        android:id="@+id/tvMovie_description"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:text="Эйч — загадочный  и холодный на вид джентльмен, но внутри него пылает жажда справедливости. Преследуя..."
-        android:textColor="#000000"
-        app:layout_constraintEnd_toEndOf="@+id/movie_image"
-        app:layout_constraintStart_toStartOf="@+id/movie_title"
-        app:layout_constraintTop_toBottomOf="@+id/movie_title" />
+        android:layout_marginTop="@dimen/movieDescriptionMarginTop"
+        android:text="Эйч — загадочный и холодный на вид джентльмен, но внутри него пылает жажда справедливости. Преследуя..."
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/ivMovie"
+        app:layout_constraintStart_toStartOf="@+id/tvMovie_title"
+        app:layout_constraintTop_toBottomOf="@+id/tvMovie_title" />
 
     <ImageView
         android:id="@+id/star_1"
-        android:layout_width="14dp"
-        android:layout_height="13dp"
-        android:layout_marginTop="15dp"
-        app:layout_constraintStart_toStartOf="@+id/movie_description"
-        app:layout_constraintTop_toBottomOf="@+id/movie_description"
+        android:layout_width="@dimen/ivStarWidth"
+        android:layout_height="@dimen/ivStarHeight"
+        android:layout_marginTop="@dimen/ivStarMarginTop"
+        app:layout_constraintStart_toStartOf="@+id/tvMovie_description"
+        app:layout_constraintTop_toBottomOf="@+id/tvMovie_description"
         app:srcCompat="@drawable/ic_fill_star"
         tools:ignore="VectorDrawableCompat" />
 
     <ImageView
-        android:id="@+id/star_2"
-        android:layout_width="14dp"
-        android:layout_height="13dp"
-        android:layout_marginStart="2dp"
-        android:layout_marginTop="15dp"
+        android:id="@+id/ivStar_2"
+        android:layout_width="@dimen/ivStarWidth"
+        android:layout_height="@dimen/ivStarHeight"
+        android:layout_marginStart="@dimen/beetwen_stars"
+        android:layout_marginTop="@dimen/ivStarMarginTop"
         app:layout_constraintStart_toEndOf="@+id/star_1"
-        app:layout_constraintTop_toBottomOf="@+id/movie_description"
+        app:layout_constraintTop_toBottomOf="@+id/tvMovie_description"
         app:srcCompat="@drawable/ic_fill_star"
         tools:ignore="VectorDrawableCompat" />
 
     <ImageView
-        android:id="@+id/star_3"
-        android:layout_width="14dp"
-        android:layout_height="13dp"
-        android:layout_marginStart="2dp"
-        android:layout_marginTop="15dp"
-        app:layout_constraintStart_toEndOf="@+id/star_2"
-        app:layout_constraintTop_toBottomOf="@+id/movie_description"
+        android:id="@+id/ivStar_3"
+        android:layout_width="@dimen/ivStarWidth"
+        android:layout_height="@dimen/ivStarHeight"
+        android:layout_marginStart="@dimen/beetwen_stars"
+        android:layout_marginTop="@dimen/ivStarMarginTop"
+        app:layout_constraintStart_toEndOf="@+id/ivStar_2"
+        app:layout_constraintTop_toBottomOf="@+id/tvMovie_description"
         app:srcCompat="@drawable/ic_fill_star"
         tools:ignore="VectorDrawableCompat" />
 
     <ImageView
-        android:id="@+id/star_4"
-        android:layout_width="14dp"
-        android:layout_height="13dp"
-        android:layout_marginStart="2dp"
-        android:layout_marginTop="15dp"
-        app:layout_constraintStart_toEndOf="@+id/star_3"
-        app:layout_constraintTop_toBottomOf="@+id/movie_description"
+        android:id="@+id/ivStar_4"
+        android:layout_width="@dimen/ivStarWidth"
+        android:layout_height="@dimen/ivStarHeight"
+        android:layout_marginStart="@dimen/beetwen_stars"
+        android:layout_marginTop="@dimen/ivStarMarginTop"
+        app:layout_constraintStart_toEndOf="@+id/ivStar_3"
+        app:layout_constraintTop_toBottomOf="@+id/tvMovie_description"
         app:srcCompat="@drawable/ic_empty_star"
         tools:ignore="VectorDrawableCompat" />
 
     <ImageView
-        android:id="@+id/star_5"
-        android:layout_width="14dp"
-        android:layout_height="13dp"
-        android:layout_marginStart="2dp"
-        android:layout_marginTop="15dp"
-        app:layout_constraintStart_toEndOf="@+id/star_4"
-        app:layout_constraintTop_toBottomOf="@+id/movie_description"
+        android:id="@+id/ivStar_5"
+        android:layout_width="@dimen/ivStarWidth"
+        android:layout_height="@dimen/ivStarHeight"
+        android:layout_marginStart="@dimen/beetwen_stars"
+        android:layout_marginTop="@dimen/ivStarMarginTop"
+        app:layout_constraintStart_toEndOf="@+id/ivStar_4"
+        app:layout_constraintTop_toBottomOf="@+id/tvMovie_description"
         app:srcCompat="@drawable/ic_empty_star"
         tools:ignore="VectorDrawableCompat" />
 
     <ImageView
-        android:id="@+id/rectangle"
-        android:layout_width="20dp"
-        android:layout_height="20dp"
-        app:layout_constraintBottom_toBottomOf="@+id/star_5"
-        app:layout_constraintEnd_toEndOf="@+id/movie_image"
-        app:layout_constraintTop_toTopOf="@+id/star_5"
+        android:id="@+id/ivRectangle"
+        android:layout_width="@dimen/rectangleWidth"
+        android:layout_height="@dimen/rectangleHeight"
+        app:layout_constraintBottom_toBottomOf="@+id/ivStar_5"
+        app:layout_constraintEnd_toEndOf="@+id/ivMovie"
+        app:layout_constraintTop_toTopOf="@+id/ivStar_5"
         app:srcCompat="@drawable/ic_ellipse"
         tools:ignore="VectorDrawableCompat" />
 
     <TextView
-        android:id="@+id/movie_age"
+        android:id="@+id/tvAge"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="18+"
-        android:textColor="#000000"
-        android:textSize="7sp"
-        app:layout_constraintBottom_toBottomOf="@+id/rectangle"
-        app:layout_constraintEnd_toEndOf="@+id/rectangle"
-        app:layout_constraintStart_toStartOf="@+id/rectangle"
-        app:layout_constraintTop_toTopOf="@+id/rectangle" />
+        android:textColor="@color/black"
+        android:textSize="@dimen/movie_age"
+        app:layout_constraintBottom_toBottomOf="@+id/ivRectangle"
+        app:layout_constraintEnd_toEndOf="@+id/ivRectangle"
+        app:layout_constraintStart_toStartOf="@+id/ivRectangle"
+        app:layout_constraintTop_toTopOf="@+id/ivRectangle" />
 </androidx.constraintlayout.widget.ConstraintLayout>

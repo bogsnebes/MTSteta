@@ -1,7 +1,7 @@
 package com.bogsnebes.mts
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.bogsnebes.mts.data.movies.MoviesDataSourceImpl
@@ -20,11 +20,8 @@ class MainActivity : AppCompatActivity() {
         val categoryes = listOf<String>("боевики", "драмы", "комедии", "артхаус", "мелодрамы")
         recyclerCategory.adapter = CategoryAdapter(categoryes, this)
 
-        recyclerMovie.hasFixedSize()
         recyclerMovie.layoutManager = GridLayoutManager(this, 2)
         recyclerMovie.adapter = MyMoviesAdapter(movieData.getMovies(), this)
-
-
     }
 
     companion object {

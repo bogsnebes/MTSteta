@@ -15,7 +15,7 @@ class CategoryAdapter(listItems: List<String>, context: Context) :
     val contextR = context
 
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
-        var tvText = view.findViewById<TextView>(R.id.text_category)
+        var tvText = view.findViewById<TextView>(R.id.tvCategory)
 
         fun bind(listItem: String, context: Context) {
             tvText.text = listItem
