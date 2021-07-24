@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="ivStatemback">0dp</dimen>
+    <dimen name="rectangleMarginStart">20dp</dimen>
+    <dimen name="rectangleMarginTop">32dp</dimen>
+    <dimen name="ellipseMarginTop">41dp</dimen>
+    <dimen name="ellipseMarginEnd">20dp</dimen>
+    <dimen name="dateMarginStart">14dp</dimen>
+    <dimen name="dateMarginTop">32dp</dimen>
+    <dimen name="nameMarginStart">22dp</dimen>
+    <dimen name="nameMarginTop">14dp</dimen>
+    <dimen name="starMarginStart">22dp</dimen>
+    <dimen name="starMarginTop">8dp</dimen>
+    <dimen name="beetwen_stars">2dp</dimen>
+    <dimen name="descriptionMarginStart">20dp</dimen>
+    <dimen name="descriptionMarginTop">16dp</dimen>
+    <dimen name="descriptionMarginEnd">20dp</dimen>
+    <dimen name="actorsMarginStart">22dp</dimen>
+    <dimen name="actorsMarginTop">35dp</dimen>
+    <dimen name="typeMarginStart">9dp</dimen>
+    <dimen name="typeMarginTop">4dp</dimen>
+    <dimen name="typeMarginEnd">9dp</dimen>
+    <dimen name="typeMarginBottom">3dp</dimen>
+    <dimen name="horrizontalScrollViewHeight">229dp</dimen>
+    <dimen name="horizontalScrollViewMarginStart">20dp</dimen>
+    <dimen name="horizontalScrollViewMarginTop">16dp</dimen>
+    <dimen name="actor_name_2MarginTop">12dp</dimen>
+    <dimen name="actorWidth">150dp</dimen>
+    <dimen name="actorHeight">196dp</dimen>
+    <dimen name="makkelaniMarginStart">10dp</dimen>
+    <dimen name="actor_name_1MarginTop">12dp</dimen>
+    <dimen name="actor_name_3MarginTop">12dp</dimen>
+    <dimen name="statemWidth">150dp</dimen>
+    <dimen name="statemHeight">196dp</dimen>
+    <dimen name="linearLayout">27dp</dimen>
+</resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="date">12sp</dimen>
+    <dimen name="Name">20sp</dimen>
+    <dimen name="description">14sp</dimen>
+    <dimen name="actors">16sp</dimen>
+    <dimen name="type">10sp</dimen>
+    <dimen name="actor_name_2">12sp</dimen>
+    <dimen name="actor_name_1">12sp</dimen>
+    <dimen name="actor_name_3">12sp</dimen>
+    <dimen name="age">14sp</dimen>
+</resources>
