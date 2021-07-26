@@ -1,8 +1,8 @@
 <resources>
     <string name="app_name">MTS</string>
-    <string name="statemBack">Стэтхэм</string>
-    <string name="Date">22.04.2021</string>
-    <string name="Name">Гнев человеческий</string>
+    <string name="statem_back">Стэтхэм</string>
+    <string name="date">22.04.2021</string>
+    <string name="name">Гнев человеческий</string>
     <string name="description">Эйч — загадочный и холодный на вид джентльмен, но внутри него пылает жажда справедливости. Преследуя свои мотивы, он внедряется в инкассаторскую компанию, чтобы выйти на соучастников серии многомиллионных ограблений, потрясших Лос-Анджелес. В этой запутанной игре у каждого своя роль, но под подозрением оказываются все. Виновных же обязательно постигнет гнев человеческий.</string>
     <string name="actors">Актеры</string>
     <string name="type">боевики</string>
@@ -18,4 +18,5 @@
     <string name="return_profile">return profile</string>
     <string name="image_of_the_film">Image of the film</string>
     <string name="category">category</string>
+    <string name="popular_now">Популярное сейчас</string>
 </resources>
