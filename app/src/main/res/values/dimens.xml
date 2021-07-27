@@ -24,11 +24,11 @@
     <dimen name="horrizontal_scrollView_height">229dp</dimen>
     <dimen name="horrizontal_scrollView_margin_start">20dp</dimen>
     <dimen name="horrizontal_scrollView_margin_top">16dp</dimen>
-    <dimen name="actor_name_2_margin_top">12dp</dimen>
     <dimen name="actor_width">150dp</dimen>
     <dimen name="actor_height">196dp</dimen>
     <dimen name="makkelani_margin_start">10dp</dimen>
     <dimen name="actor_name_1_margin_top">12dp</dimen>
+    <dimen name="actor_name_2_margin_top">12dp</dimen>
     <dimen name="actor_name_3_margin_top">12dp</dimen>
     <dimen name="statem_width">150dp</dimen>
     <dimen name="statem_height">196dp</dimen>
