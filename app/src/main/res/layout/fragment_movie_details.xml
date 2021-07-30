@@ -5,6 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
+    <!--        Переделать app and android на tools-->
+
     <ImageView
         android:id="@+id/statemback"
         android:layout_width="0dp"
@@ -15,7 +17,7 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/stathemback"
+        tools:srcCompat="@drawable/stathemback"
         tools:ignore="ContentDescription" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -25,6 +27,7 @@
         android:background="@drawable/layout_bg"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteY="224dp">
+
 
         <ImageView
             android:id="@+id/ivRectangle"
@@ -57,7 +60,7 @@
             android:layout_marginStart="14dp"
             android:layout_marginTop="32dp"
             android:gravity="top"
-            android:text="@string/date"
+            tools:text="@string/date"
             android:textColor="#000000"
             android:textSize="12sp"
             app:layout_constraintStart_toEndOf="@+id/ivRectangle"
