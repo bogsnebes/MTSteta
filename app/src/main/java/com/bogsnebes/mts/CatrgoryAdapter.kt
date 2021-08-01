@@ -8,14 +8,11 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 
-class CategoryAdapter(listItems: List<String>, context: Context) :
+class CategoryAdapter(private val listItems: List<String>, private val context: Context) :
     RecyclerView.Adapter<CategoryAdapter.ViewHolder>() {
 
-    val listItemsR = listItems
-    val contextR = context
-
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
-        var tvText = view.findViewById<TextView>(R.id.tvCategory)
+        private var tvText: TextView = view.findViewById(R.id.tvCategory)
 
         fun bind(listItem: String, context: Context) {
             tvText.text = listItem
@@ -27,16 +24,16 @@ class CategoryAdapter(listItems: List<String>, context: Context) :
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        val inflater = LayoutInflater.from(contextR)
+        val inflater = LayoutInflater.from(context)
         return ViewHolder(inflater.inflate(R.layout.item_category, parent, false))
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        val listItem = listItemsR.get(position)
-        holder.bind(listItem, contextR)
+        val listItem = listItems[position]
+        holder.bind(listItem, context)
     }
 
     override fun getItemCount(): Int {
-        return listItemsR.size
+        return listItems.size
     }
 }

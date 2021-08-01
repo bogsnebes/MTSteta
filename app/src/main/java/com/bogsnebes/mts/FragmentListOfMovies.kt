@@ -9,7 +9,7 @@ import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 
-class FragmentListOfMovies: Fragment() {
+class FragmentListOfMovies : Fragment() {
 
     private lateinit var recyclerMovie: RecyclerView
     private lateinit var recyclerCategory: RecyclerView
@@ -24,8 +24,8 @@ class FragmentListOfMovies: Fragment() {
         recyclerCategory = view.findViewById(R.id.recyclerCategory)
 
         recyclerCategory.hasFixedSize()
-        val categoryes = listOf<String>("боевики", "драмы", "комедии", "артхаус", "мелодрамы")
-        recyclerCategory.adapter = CategoryAdapter(categoryes, view.context)
+        val categories = listOf("боевики", "драмы", "комедии", "артхаус", "мелодрамы")
+        recyclerCategory.adapter = CategoryAdapter(categories, view.context)
 
         recyclerMovie.layoutManager = GridLayoutManager(view.context, 2)
         recyclerMovie.adapter = MyMoviesAdapter(MainActivity.movieData.getMovies(), view.context) {

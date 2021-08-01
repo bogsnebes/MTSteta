@@ -19,4 +19,21 @@
     <string name="image_of_the_film">Image of the film</string>
     <string name="category">category</string>
     <string name="popular_now">Популярное сейчас</string>
+    <string name="exit">Выйти</string>
+    <string name="report_about_error">Сообщить о проблеме</string>
+    <string name="ask_question">Задать вопрос</string>
+    <string name="app">Приложение</string>
+    <string name="data_and_memory">Данные и память</string>
+    <string name="language">Язык</string>
+    <string name="theme">Тема</string>
+    <string name="confidetial">Конфедициальность</string>
+    <string name="notifaticaons">Уведомления и звуки</string>
+    <string name="settings">Настройки</string>
+    <string name="number">Телефон</string>
+    <string name="email">konst.89@mail.com</string>
+    <string name="password">*************</string>
+    <string name="name_profile">Константин</string>
+    <string name="name_profile_title">Имя</string>
+    <string name="data_profile">Личные данные</string>
+    <string name="interest">Интересы</string>
 </resources>

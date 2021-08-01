@@ -47,19 +47,17 @@ class FragmentMovieDetails : Fragment(R.layout.fragment_movie_details) {
             background.load(movieDto.imageUrl)
             title.text = movieDto.title
 
-            for(i in 0 until movieDto.rateScore) {
+            for (i in 0 until movieDto.rateScore) {
                 star[i].load(R.drawable.ic_fill_star)
             }
 
-            for(i in movieDto.rateScore until 5) {
+            for (i in movieDto.rateScore until 5) {
                 star[i].load(R.drawable.ic_empty_star)
             }
 
             description.text = movieDto.description
             age.text = movieDto.ageRestriction.toString() + "+"
         }
-
-        val x = arguments?.getSerializable("MOVIE")
 
         return view
     }
