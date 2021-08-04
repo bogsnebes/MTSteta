@@ -8,20 +8,8 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 
-class CategoryAdapter(private val listItems: List<String>, private val context: Context) :
+class CategoryAdapter(private val context: Context, private val listItems: List<String>) :
     RecyclerView.Adapter<CategoryAdapter.ViewHolder>() {
-
-    class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
-        private var tvText: TextView = view.findViewById(R.id.tvCategory)
-
-        fun bind(listItem: String, context: Context) {
-            tvText.text = listItem
-
-            itemView.setOnClickListener {
-                Toast.makeText(context, "${tvText.text}", Toast.LENGTH_SHORT).show()
-            }
-        }
-    }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val inflater = LayoutInflater.from(context)
@@ -29,11 +17,24 @@ class CategoryAdapter(private val listItems: List<String>, private val context: 
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        val listItem = listItems[position]
-        holder.bind(listItem, context)
+        holder.bind(listItems[position], context)
     }
 
     override fun getItemCount(): Int {
         return listItems.size
+    }
+
+    inner class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
+        private var tvText: TextView = view.findViewById(R.id.tvCategory)
+
+        init {
+            itemView.setOnClickListener {
+                Toast.makeText(context, "${tvText.text}", Toast.LENGTH_SHORT).show()
+            }
+        }
+
+        fun bind(listItem: String, context: Context) {
+            tvText.text = listItem
+        }
     }
 }

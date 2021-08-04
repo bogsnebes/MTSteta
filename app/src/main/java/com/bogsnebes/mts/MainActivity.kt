@@ -16,37 +16,42 @@ class MainActivity : AppCompatActivity(R.layout.activity_main),
 
         bottomNavigationMenu = findViewById(R.id.bottomNavigationView)
 
-        supportFragmentManager.beginTransaction()
+        supportFragmentManager
+            .beginTransaction()
             .add(R.id.container, FragmentListOfMovies())
             .commit()
 
-        supportFragmentManager.setFragmentResultListener(
-            FragmentListOfMovies.MOVIE_OPEN_KEY,
-            this
-        ) { _, bundle ->
-            (bundle.getSerializable(FragmentListOfMovies.MOVIE_OPEN_KEY) as? MovieDto)?.let {
+        supportFragmentManager
+            .setFragmentResultListener(
+                FragmentListOfMovies.MOVIE_OPEN_KEY,
+                this
+            ) { _, bundle ->
+                (bundle.getSerializable(FragmentListOfMovies.MOVIE_OPEN_KEY) as? MovieDto)?.let {
 
-                supportFragmentManager.beginTransaction()
-                    .add(
-                        R.id.container, FragmentMovieDetails.newInstance(
-                            it
+                    supportFragmentManager
+                        .beginTransaction()
+                        .add(
+                            R.id.container, FragmentMovieDetails.newInstance(
+                                it
+                            )
                         )
-                    ).hide(FragmentListOfMovies())
-                    .commit()
+                        .hide(FragmentListOfMovies())
+                        .commit()
+                }
             }
-        }
-
         bottomNavigationMenu.setOnNavigationItemSelectedListener(this)
-
-
     }
 
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
         when (item.itemId) {
-            R.id.home -> supportFragmentManager.beginTransaction()
-                .replace(R.id.container, FragmentListOfMovies()).commit()
-            R.id.profile -> supportFragmentManager.beginTransaction()
-                .replace(R.id.container, FragmentProfile()).commit()
+            R.id.home -> supportFragmentManager
+                .beginTransaction()
+                .replace(R.id.container, FragmentListOfMovies())
+                .commit()
+            R.id.profile -> supportFragmentManager
+                .beginTransaction()
+                .replace(R.id.container, FragmentProfile())
+                .commit()
         }
         return true
     }
