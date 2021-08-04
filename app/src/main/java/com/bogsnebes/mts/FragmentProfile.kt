@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.RecyclerView
+import com.bogsnebes.mts.data.movies.CategoriesDataSource
 
 class FragmentProfile : Fragment() {
     private lateinit var recyclerCategory: RecyclerView
@@ -16,18 +17,21 @@ class FragmentProfile : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         val view = inflater.inflate(R.layout.fragment_profile, container, false)
-
-        recyclerCategory = view.findViewById(R.id.recyclerCategoryProfile)
-
-        recyclerCategory.adapter = CategoryAdapter(categories, view.context)
-
         return view
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        recyclerCategory = view.findViewById(R.id.rvCategoryProfile)
+
+        recyclerCategory.adapter = CategoryAdapter(view.context, categoriesData.getCategories())
     }
 
     companion object {
         val TAG: String = FragmentProfile::class.java.simpleName
-        fun newInstance() = FragmentProfile()
 
-        private val categories = listOf("боевики", "драмы", "комедии")
+        fun newInstance() = FragmentProfile()
+        val categoriesData = CategoriesDataSource()
     }
 }

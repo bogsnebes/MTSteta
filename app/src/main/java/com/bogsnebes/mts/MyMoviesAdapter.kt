@@ -13,15 +13,28 @@ import coil.transform.RoundedCornersTransformation
 import com.bogsnebes.mts.data.dto.MovieDto
 
 class MyMoviesAdapter(
-    private val listItems: List<MovieDto>,
     private val context: Context,
-    private val callBack: (MovieDto) -> Unit
+    private val listItems: List<MovieDto>,
+    private val callback: (MovieDto) -> Unit
 ) :
     RecyclerView.Adapter<MyMoviesAdapter.ViewHolder>() {
 
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
+        val inflater = LayoutInflater.from(context)
+        return ViewHolder(inflater.inflate(R.layout.item_movie, parent, false))
+    }
+
+    override fun getItemCount(): Int {
+        return listItems.size
+    }
+
+    override fun onBindViewHolder(holder: ViewHolder, position: Int) {
+        holder.bind(listItems[position])
+    }
+
     inner class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
-        private val title = view.findViewById<TextView>(R.id.tvMovie_title)
-        private val description = view.findViewById<TextView>(R.id.tvMovie_description)
+        private val title = view.findViewById<TextView>(R.id.tvMovieTitle)
+        private val description = view.findViewById<TextView>(R.id.tvMovieDescription)
         private val star by lazy {
             listOf(
                 view.findViewById(R.id.star_1),
@@ -39,7 +52,13 @@ class MyMoviesAdapter(
             title.text = listItem.title
             description.text = listItem.description
             age.text = listItem.ageRestriction.toString() + "+"
-            image.load(listItem.imageUrl) { transformations(RoundedCornersTransformation(30f)) }
+            image.load(listItem.imageUrl) {
+                transformations(
+                    RoundedCornersTransformation(
+                        cornersRadius
+                    )
+                )
+            }
 
             for (i in 0 until listItem.rateScore) {
                 star[i].load(R.drawable.ic_fill_star)
@@ -50,23 +69,12 @@ class MyMoviesAdapter(
             }
 
             itemView.setOnClickListener {
-                callBack.invoke(listItem)
+                callback.invoke(listItem)
             }
         }
     }
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        val inflater = LayoutInflater.from(context)
-        return ViewHolder(inflater.inflate(R.layout.item_movie, parent, false))
+    companion object {
+        private const val cornersRadius = 30f
     }
-
-    override fun getItemCount(): Int {
-        return listItems.size
-    }
-
-    override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        val listItem = listItems[position]
-        holder.bind(listItem)
-    }
-
 }
