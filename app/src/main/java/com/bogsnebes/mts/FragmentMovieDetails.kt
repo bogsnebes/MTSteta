@@ -21,7 +21,6 @@ class FragmentMovieDetails : Fragment(R.layout.fragment_movie_details) {
     private lateinit var description: TextView
     private lateinit var age: TextView
 
-    @SuppressLint("SetTextI18n")
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -29,7 +28,12 @@ class FragmentMovieDetails : Fragment(R.layout.fragment_movie_details) {
     ): View? {
         super.onCreate(savedInstanceState)
         val view = inflater.inflate(R.layout.fragment_movie_details, container, false)
+        return view
+    }
 
+    @SuppressLint("SetTextI18n")
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
         background = view.findViewById(R.id.ivBackgroundMovieDetails)
         date = view.findViewById(R.id.tvDate)
         title = view.findViewById(R.id.tvName)
@@ -43,7 +47,7 @@ class FragmentMovieDetails : Fragment(R.layout.fragment_movie_details) {
         description = view.findViewById(R.id.tvDescription)
         age = view.findViewById(R.id.tvAgeMovieDetails)
 
-        (arguments?.getSerializable("MOVIE") as? MovieDto)?.let { movieDto ->
+        (arguments?.getSerializable(MOVIE) as? MovieDto)?.let { movieDto ->
             background.load(movieDto.imageUrl)
             title.text = movieDto.title
 
@@ -58,14 +62,14 @@ class FragmentMovieDetails : Fragment(R.layout.fragment_movie_details) {
             description.text = movieDto.description
             age.text = movieDto.ageRestriction.toString() + "+"
         }
-
-        return view
     }
 
     companion object {
         val TAG: String = FragmentMovieDetails::class.java.simpleName
+
         fun newInstance(movieDto: MovieDto) = FragmentMovieDetails().apply {
-            arguments = bundleOf("MOVIE" to movieDto)
+            arguments = bundleOf(MOVIE to movieDto)
         }
+        val MOVIE: String = "MOVIE"
     }
 }

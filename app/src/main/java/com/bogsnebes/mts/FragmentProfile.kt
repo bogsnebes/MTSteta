@@ -17,7 +17,7 @@ class FragmentProfile : Fragment() {
     ): View? {
         val view = inflater.inflate(R.layout.fragment_profile, container, false)
 
-        recyclerCategory = view.findViewById(R.id.recyclerCategoryProfile)
+        recyclerCategory = view.findViewById(R.id.rvCategoryProfile)
 
         recyclerCategory.adapter = CategoryAdapter(categories, view.context)
 
@@ -26,8 +26,8 @@ class FragmentProfile : Fragment() {
 
     companion object {
         val TAG: String = FragmentProfile::class.java.simpleName
-        fun newInstance() = FragmentProfile()
 
+        fun newInstance() = FragmentProfile()
         private val categories = listOf("боевики", "драмы", "комедии")
     }
 }

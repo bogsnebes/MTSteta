@@ -6,43 +6,43 @@
     android:layout_height="wrap_content">
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/tvNameProfile"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginTop="64dp"
-        android:text="@string/name_profile"
+        android:text="@string/fp_name_profile"
         android:textColor="#000000"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/tvEmail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginTop="2dp"
-        android:text="@string/email"
+        android:text="@string/fp_email"
         android:textColor="@color/black"
         android:textSize="14sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        app:layout_constraintTop_toBottomOf="@+id/tvNameProfile" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/interest"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginTop="57dp"
-        android:text="@string/interest"
+        android:text="@string/fp_interest"
         android:textColor="@color/black"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+        app:layout_constraintTop_toBottomOf="@+id/tvEmail" />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerCategoryProfile"
+        android:id="@+id/rvCategoryProfile"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
@@ -50,97 +50,97 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+        app:layout_constraintTop_toBottomOf="@+id/interest" />
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/tvMyData"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginTop="40dp"
-        android:text="@string/data_profile"
+        android:text="@string/fp_data_profile"
         android:textColor="@color/black"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/recyclerCategoryProfile" />
+        app:layout_constraintTop_toBottomOf="@+id/rvCategoryProfile" />
 
     <TextView
-        android:id="@+id/textView6"
+        android:id="@+id/tvNameMini"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginTop="15dp"
-        android:text="@string/name_profile_title"
+        android:text="@string/fp_name_profile_title"
         android:textColor="@color/black"
         android:textSize="12sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+        app:layout_constraintTop_toBottomOf="@+id/tvMyData" />
 
     <TextView
-        android:id="@+id/textView7"
+        android:id="@+id/tvNameInput"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginTop="6dp"
-        android:text="@string/name_profile"
+        android:text="@string/fp_name_profile"
         android:textColor="@color/black"
         android:textSize="14sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+        app:layout_constraintTop_toBottomOf="@+id/tvNameMini" />
 
     <TextView
-        android:id="@+id/textView8"
+        android:id="@+id/tvPasswordInput"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginTop="26dp"
-        android:text="@string/password"
+        android:text="@string/fp_password"
         android:textColor="@color/black"
         android:textSize="14sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+        app:layout_constraintTop_toBottomOf="@+id/tvNameInput" />
 
     <TextView
-        android:id="@+id/textView9"
+        android:id="@+id/tvEmailInput"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginTop="26dp"
-        android:text="@string/email"
+        android:text="@string/fp_email"
         android:textColor="@color/black"
         android:textSize="14sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+        app:layout_constraintTop_toBottomOf="@+id/tvPasswordInput" />
 
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/ivLine"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="6dp"
-        app:layout_constraintStart_toStartOf="@+id/textView9"
-        app:layout_constraintTop_toBottomOf="@+id/textView9"
+        app:layout_constraintStart_toStartOf="@+id/tvEmailInput"
+        app:layout_constraintTop_toBottomOf="@+id/tvEmailInput"
         app:srcCompat="@drawable/ic_line"
         tools:ignore="VectorDrawableCompat" />
 
     <TextView
-        android:id="@+id/textView10"
+        android:id="@+id/tvNumber"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginTop="26dp"
-        android:text="@string/number"
+        android:text="@string/fp_number"
         android:textColor="@color/black"
         android:textSize="12sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+        app:layout_constraintTop_toBottomOf="@+id/tvEmailInput" />
 
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="6dp"
-        app:layout_constraintStart_toStartOf="@+id/textView10"
-        app:layout_constraintTop_toBottomOf="@+id/textView10"
+        app:layout_constraintStart_toStartOf="@+id/tvNumber"
+        app:layout_constraintTop_toBottomOf="@+id/tvNumber"
         app:srcCompat="@drawable/ic_line"
         tools:ignore="VectorDrawableCompat" />
 
@@ -149,8 +149,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="6dp"
-        app:layout_constraintStart_toStartOf="@+id/textView8"
-        app:layout_constraintTop_toBottomOf="@+id/textView8"
+        app:layout_constraintStart_toStartOf="@+id/tvPasswordInput"
+        app:layout_constraintTop_toBottomOf="@+id/tvPasswordInput"
         app:srcCompat="@drawable/ic_line"
         tools:ignore="VectorDrawableCompat" />
 
@@ -159,8 +159,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="6dp"
-        app:layout_constraintStart_toStartOf="@+id/textView7"
-        app:layout_constraintTop_toBottomOf="@+id/textView7"
+        app:layout_constraintStart_toStartOf="@+id/tvNameInput"
+        app:layout_constraintTop_toBottomOf="@+id/tvNameInput"
         app:srcCompat="@drawable/ic_line"
         tools:ignore="VectorDrawableCompat" />
 
@@ -170,14 +170,14 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginTop="40dp"
-        android:text="@string/settings"
+        android:text="@string/fp_settings"
         android:textColor="@color/black"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
     <ImageView
-        android:id="@+id/imageView6"
+        android:id="@+id/tvSettings"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="48dp"
@@ -188,12 +188,12 @@
         tools:ignore="VectorDrawableCompat" />
 
     <TextView
-        android:id="@+id/textView12"
+        android:id="@+id/tvNotifactions"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginTop="11dp"
-        android:text="@string/notifaticaons"
+        android:text="@string/fp_notifaticaons"
         android:textColor="@color/black"
         android:textSize="14sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -204,67 +204,67 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="20dp"
-        app:layout_constraintBottom_toBottomOf="@+id/textView12"
+        app:layout_constraintBottom_toBottomOf="@+id/tvNotifactions"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/textView12"
+        app:layout_constraintTop_toTopOf="@+id/tvNotifactions"
         app:srcCompat="@drawable/ic_arrow"
         tools:ignore="VectorDrawableCompat" />
 
     <TextView
-        android:id="@+id/textView13"
+        android:id="@+id/tvConfidentionals"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginTop="20dp"
-        android:text="@string/confidetial"
+        android:text="@string/fp_confidetial"
         android:textColor="@color/black"
         android:textSize="14sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView12" />
+        app:layout_constraintTop_toBottomOf="@+id/tvNotifactions" />
 
     <ImageView
         android:id="@+id/imageView8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="20dp"
-        app:layout_constraintBottom_toBottomOf="@+id/textView13"
+        app:layout_constraintBottom_toBottomOf="@+id/tvConfidentionals"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/textView13"
+        app:layout_constraintTop_toTopOf="@+id/tvConfidentionals"
         app:srcCompat="@drawable/ic_arrow"
         tools:ignore="VectorDrawableCompat" />
 
     <TextView
-        android:id="@+id/textView14"
+        android:id="@+id/tvTheme"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginTop="20dp"
-        android:text="@string/theme"
+        android:text="@string/fp_theme"
         android:textColor="@color/black"
         android:textSize="14sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+        app:layout_constraintTop_toBottomOf="@+id/tvConfidentionals" />
 
     <TextView
-        android:id="@+id/textView15"
+        android:id="@+id/tvLanguage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginTop="20dp"
-        android:text="@string/language"
+        android:text="@string/fp_language"
         android:textColor="@color/black"
         android:textSize="14sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView14" />
+        app:layout_constraintTop_toBottomOf="@+id/tvTheme" />
 
     <ImageView
         android:id="@+id/imageView9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="20dp"
-        app:layout_constraintBottom_toBottomOf="@+id/textView14"
+        app:layout_constraintBottom_toBottomOf="@+id/tvTheme"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/textView14"
+        app:layout_constraintTop_toTopOf="@+id/tvTheme"
         app:srcCompat="@drawable/ic_arrow"
         tools:ignore="VectorDrawableCompat" />
 
@@ -273,32 +273,32 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="20dp"
-        app:layout_constraintBottom_toBottomOf="@+id/textView15"
+        app:layout_constraintBottom_toBottomOf="@+id/tvLanguage"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/textView15"
+        app:layout_constraintTop_toTopOf="@+id/tvLanguage"
         app:srcCompat="@drawable/ic_arrow"
         tools:ignore="VectorDrawableCompat" />
 
     <TextView
-        android:id="@+id/textView16"
+        android:id="@+id/tvDataAndMemory"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginTop="20dp"
-        android:text="@string/data_and_memory"
+        android:text="@string/fp_data_and_memory"
         android:textColor="@color/black"
         android:textSize="14sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView15" />
+        app:layout_constraintTop_toBottomOf="@+id/tvLanguage" />
 
     <ImageView
         android:id="@+id/imageView11"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="20dp"
-        app:layout_constraintBottom_toBottomOf="@+id/textView16"
+        app:layout_constraintBottom_toBottomOf="@+id/tvDataAndMemory"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/textView16"
+        app:layout_constraintTop_toTopOf="@+id/tvDataAndMemory"
         app:srcCompat="@drawable/ic_arrow"
         tools:ignore="VectorDrawableCompat" />
 
@@ -308,19 +308,19 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginTop="40dp"
-        android:text="@string/app"
+        android:text="@string/fp_app"
         android:textColor="@color/black"
         android:textSize="14sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView16" />
+        app:layout_constraintTop_toBottomOf="@+id/tvDataAndMemory" />
 
     <TextView
-        android:id="@+id/textView18"
+        android:id="@+id/tvAsk"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginTop="10dp"
-        android:text="@string/ask_question"
+        android:text="@string/fp_ask_question"
         android:textColor="@color/black"
         android:textSize="14sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -331,32 +331,32 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="20dp"
-        app:layout_constraintBottom_toBottomOf="@+id/textView18"
+        app:layout_constraintBottom_toBottomOf="@+id/tvAsk"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/textView18"
+        app:layout_constraintTop_toTopOf="@+id/tvAsk"
         app:srcCompat="@drawable/ic_arrow"
         tools:ignore="VectorDrawableCompat" />
 
     <TextView
-        android:id="@+id/textView19"
+        android:id="@+id/tvReportAboutProblem"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginTop="21dp"
-        android:text="@string/report_about_error"
+        android:text="@string/fp_report_about_error"
         android:textColor="@color/black"
         android:textSize="14sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView18" />
+        app:layout_constraintTop_toBottomOf="@+id/tvAsk" />
 
     <ImageView
         android:id="@+id/imageView13"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="20dp"
-        app:layout_constraintBottom_toBottomOf="@+id/textView19"
+        app:layout_constraintBottom_toBottomOf="@+id/tvReportAboutProblem"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/textView19"
+        app:layout_constraintTop_toTopOf="@+id/tvReportAboutProblem"
         app:srcCompat="@drawable/ic_arrow"
         tools:ignore="VectorDrawableCompat" />
 
@@ -369,13 +369,13 @@
         android:layout_marginEnd="20dp"
         android:layout_marginBottom="50dp"
         android:background="#C4C4C4"
-        android:text="@string/exit"
+        android:text="@string/fp_exit"
         android:textColor="@color/black"
         android:textSize="16sp"
         app:backgroundTint="#C4C4C4"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView19" />
+        app:layout_constraintTop_toBottomOf="@+id/tvReportAboutProblem" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

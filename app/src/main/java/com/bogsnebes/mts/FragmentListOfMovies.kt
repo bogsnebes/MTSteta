@@ -8,6 +8,7 @@ import androidx.core.os.bundleOf
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.bogsnebes.mts.data.movies.CategoriesDataSource
 
 class FragmentListOfMovies : Fragment() {
 
@@ -19,25 +20,28 @@ class FragmentListOfMovies : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val view = inflater.inflate(R.layout.fragment_list_of_movies, container, false)
-        recyclerMovie = view.findViewById(R.id.recyclerMovie)!!
-        recyclerCategory = view.findViewById(R.id.recyclerCategory)
+        val view = inflater.inflate(R.layout.fragment_movie_list, container, false)
+        return view
+    }
 
-        recyclerCategory.hasFixedSize()
-        val categories = listOf("боевики", "драмы", "комедии", "артхаус", "мелодрамы")
-        recyclerCategory.adapter = CategoryAdapter(categories, view.context)
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        recyclerMovie = view.findViewById(R.id.rvMovie)
+        recyclerCategory = view.findViewById(R.id.rvCategory)
+
+        recyclerCategory.adapter = CategoryAdapter(view.context, categoriesData.getCategories())
 
         recyclerMovie.layoutManager = GridLayoutManager(view.context, 2)
-        recyclerMovie.adapter = MyMoviesAdapter(MainActivity.movieData.getMovies(), view.context) {
+        recyclerMovie.adapter = MyMoviesAdapter(view.context, MainActivity.movieData.getMovies()) {
             parentFragmentManager.setFragmentResult(MOVIE_OPEN_KEY, bundleOf(MOVIE_OPEN_KEY to it))
         }
-
-        return view
     }
 
     companion object {
         val TAG: String = FragmentListOfMovies::class.java.simpleName
+
         fun newInstance() = FragmentListOfMovies()
-        internal const val MOVIE_OPEN_KEY: String = "Movie open key"
+        internal const val MOVIE_OPEN_KEY: String = "MOVIE_OPEN_KEY"
+        val categoriesData = CategoriesDataSource()
     }
 }
