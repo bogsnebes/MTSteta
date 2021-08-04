@@ -29,20 +29,34 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rvMovie"
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/strRvMovie"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="@dimen/fml_movie_recycle_margin_start"
         android:layout_marginTop="@dimen/fml_movie_recycle_movie_top"
         android:layout_marginEnd="@dimen/fml_movie_recycle_margin_end"
-        android:numColumns="2"
-        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/rvCategory" />
+        app:layout_constraintTop_toBottomOf="@+id/rvCategory">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvMovie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="@dimen/fml_movie_recycle_margin_start"
+            android:layout_marginTop="@dimen/fml_movie_recycle_movie_top"
+            android:layout_marginEnd="@dimen/fml_movie_recycle_margin_end"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/recyclerCategory"
+            tools:ignore="NotSibling" />
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvCategory"
