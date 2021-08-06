@@ -1,16 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="movie_age">7sp</dimen>
-    <dimen name="type">10sp</dimen>
-    <dimen name="category">10sp</dimen>
-    <dimen name="date">12sp</dimen>
-    <dimen name="actor_name_1">12sp</dimen>
-    <dimen name="actor_name_2">12sp</dimen>
-    <dimen name="actor_name_3">12sp</dimen>
-    <dimen name="description">14sp</dimen>
-    <dimen name="age">14sp</dimen>
-    <dimen name="movie_title">14sp</dimen>
-    <dimen name="actors">16sp</dimen>
-    <dimen name="popular">16sp</dimen>
-    <dimen name="Name">20sp</dimen>
+    <dimen name="mini_text">7sp</dimen>
+    <dimen name="categories">10sp</dimen>
+    <dimen name="titles">12sp</dimen>
+    <dimen name="simple_text">14sp</dimen>
+    <dimen name="heading_2">16sp</dimen>
+    <dimen name="heading">20sp</dimen>
 </resources>
