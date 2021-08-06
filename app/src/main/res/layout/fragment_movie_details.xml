@@ -93,8 +93,8 @@
 
         <ImageView
             android:id="@+id/ivStar"
-            android:layout_width="@dimen/fml_iv_star_height"
-            android:layout_height="@dimen/fml_iv_star_width"
+            android:layout_width="@dimen/fml_star_height"
+            android:layout_height="@dimen/fml_star_width"
             android:layout_marginStart="22dp"
             android:layout_marginTop="8dp"
             android:contentDescription="@string/fmd_star"
@@ -106,8 +106,8 @@
 
         <ImageView
             android:id="@+id/ivStar1"
-            android:layout_width="@dimen/fml_iv_star_height"
-            android:layout_height="@dimen/fml_iv_star_width"
+            android:layout_width="@dimen/fml_star_height"
+            android:layout_height="@dimen/fml_star_width"
             android:layout_marginStart="2dp"
             android:layout_marginTop="8dp"
             android:contentDescription="@string/fmd_star"
@@ -118,8 +118,8 @@
 
         <ImageView
             android:id="@+id/ivStar2"
-            android:layout_width="@dimen/fml_iv_star_height"
-            android:layout_height="@dimen/fml_iv_star_width"
+            android:layout_width="@dimen/fml_star_height"
+            android:layout_height="@dimen/fml_star_width"
             android:layout_marginStart="2dp"
             android:layout_marginTop="8dp"
             android:contentDescription="@string/fmd_star"
@@ -130,8 +130,8 @@
 
         <ImageView
             android:id="@+id/ivStar3"
-            android:layout_width="@dimen/fml_iv_star_height"
-            android:layout_height="@dimen/fml_iv_star_width"
+            android:layout_width="@dimen/fml_star_height"
+            android:layout_height="@dimen/fml_star_width"
             android:layout_marginStart="2dp"
             android:layout_marginTop="8dp"
             android:contentDescription="@string/fmd_star"
@@ -142,8 +142,8 @@
 
         <ImageView
             android:id="@+id/ivStar4"
-            android:layout_width="@dimen/fml_iv_star_height"
-            android:layout_height="@dimen/fml_iv_star_width"
+            android:layout_width="@dimen/fml_star_height"
+            android:layout_height="@dimen/fml_star_width"
             android:layout_marginStart="2dp"
             android:layout_marginTop="8dp"
             android:contentDescription="@string/fmd_empty_star"

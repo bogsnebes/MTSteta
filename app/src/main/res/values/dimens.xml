@@ -43,14 +43,14 @@
     <dimen name="fml_category_recycler_margin_start">20dp</dimen>
     <dimen name="fml_category_recycler_margin_top">12dp</dimen>
     <dimen name="fml_category_recycler_margin_end">20dp</dimen>
-    <dimen name="fml_iv_movie_width">150dp</dimen>
-    <dimen name="fml_iv_movie_height">216dp</dimen>
-    <dimen name="fml_tv_movie_margin_start">3dp</dimen>
-    <dimen name="fml_tv_movie_margin_top">8dp</dimen>
+    <dimen name="fml_movie_width">150dp</dimen>
+    <dimen name="fml_movie_height">216dp</dimen>
+    <dimen name="fml_movie_margin_start">3dp</dimen>
+    <dimen name="fml_movie_margin_top">8dp</dimen>
     <dimen name="fml_movie_description_margin_top">10dp</dimen>
-    <dimen name="fml_iv_star_width">14dp</dimen>
-    <dimen name="fml_iv_star_height">13dp</dimen>
-    <dimen name="fml_iv_star_margin_top">15dp</dimen>
+    <dimen name="fml_star_width">14dp</dimen>
+    <dimen name="fml_star_height">13dp</dimen>
+    <dimen name="fml_star_margin_top">15dp</dimen>
     <dimen name="fml_rectangle_width">20dp</dimen>
     <dimen name="fml_rectangle_height">20dp</dimen>
 </resources>

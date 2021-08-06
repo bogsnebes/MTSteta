@@ -25,7 +25,7 @@ class FragmentProfile : Fragment() {
 
         recyclerCategory = view.findViewById(R.id.rvCategoryProfile)
 
-        recyclerCategory.adapter = CategoryAdapter(view.context, categoriesData.getCategories())
+        recyclerCategory.adapter = CategoryAdapter(view.context, categoriesData.getCategoriesProfile())
     }
 
     companion object {
