@@ -25,16 +25,16 @@ class CategoryAdapter(private val context: Context, private val listItems: List<
     }
 
     inner class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
-        private var tvCategory: TextView = view.findViewById(R.id.tvCategory)
+        private var tvText: TextView = view.findViewById(R.id.tvCategory)
 
         init {
             itemView.setOnClickListener {
-                Toast.makeText(context, "${tvCategory.text}", Toast.LENGTH_SHORT).show()
+                Toast.makeText(context, "${tvText.text}", Toast.LENGTH_SHORT).show()
             }
         }
 
         fun bind(listItem: String, context: Context) {
-            tvCategory.text = listItem
+            tvText.text = listItem
         }
     }
 }

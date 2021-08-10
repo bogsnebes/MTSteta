@@ -70,6 +70,6 @@ class FragmentMovieDetails : Fragment(R.layout.fragment_movie_details) {
         fun newInstance(movieDto: MovieDto) = FragmentMovieDetails().apply {
             arguments = bundleOf(MOVIE to movieDto)
         }
-        const val MOVIE: String = "MOVIE"
+        val MOVIE: String = "MOVIE"
     }
 }

@@ -6,15 +6,6 @@
     android:layout_height="wrap_content">
 
     <!--        Переделать app and android на tools-->
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:fillViewport="true"
-        tools:ignore="ScrollViewCount">
-
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
 
     <ImageView
         android:id="@+id/ivBackgroundMovieDetails"
@@ -93,8 +84,8 @@
 
         <ImageView
             android:id="@+id/ivStar"
-            android:layout_width="@dimen/fml_star_height"
-            android:layout_height="@dimen/fml_star_width"
+            android:layout_width="@dimen/fml_iv_star_height"
+            android:layout_height="@dimen/fml_iv_star_width"
             android:layout_marginStart="22dp"
             android:layout_marginTop="8dp"
             android:contentDescription="@string/fmd_star"
@@ -106,8 +97,8 @@
 
         <ImageView
             android:id="@+id/ivStar1"
-            android:layout_width="@dimen/fml_star_height"
-            android:layout_height="@dimen/fml_star_width"
+            android:layout_width="@dimen/fml_iv_star_height"
+            android:layout_height="@dimen/fml_iv_star_width"
             android:layout_marginStart="2dp"
             android:layout_marginTop="8dp"
             android:contentDescription="@string/fmd_star"
@@ -118,8 +109,8 @@
 
         <ImageView
             android:id="@+id/ivStar2"
-            android:layout_width="@dimen/fml_star_height"
-            android:layout_height="@dimen/fml_star_width"
+            android:layout_width="@dimen/fml_iv_star_height"
+            android:layout_height="@dimen/fml_iv_star_width"
             android:layout_marginStart="2dp"
             android:layout_marginTop="8dp"
             android:contentDescription="@string/fmd_star"
@@ -130,8 +121,8 @@
 
         <ImageView
             android:id="@+id/ivStar3"
-            android:layout_width="@dimen/fml_star_height"
-            android:layout_height="@dimen/fml_star_width"
+            android:layout_width="@dimen/fml_iv_star_height"
+            android:layout_height="@dimen/fml_iv_star_width"
             android:layout_marginStart="2dp"
             android:layout_marginTop="8dp"
             android:contentDescription="@string/fmd_star"
@@ -142,8 +133,8 @@
 
         <ImageView
             android:id="@+id/ivStar4"
-            android:layout_width="@dimen/fml_star_height"
-            android:layout_height="@dimen/fml_star_width"
+            android:layout_width="@dimen/fml_iv_star_height"
+            android:layout_height="@dimen/fml_iv_star_width"
             android:layout_marginStart="2dp"
             android:layout_marginTop="8dp"
             android:contentDescription="@string/fmd_empty_star"
@@ -203,8 +194,6 @@
             android:layout_height="229dp"
             android:layout_marginStart="20dp"
             android:layout_marginTop="16dp"
-            android:layout_marginBottom="50dp"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tvActors">
@@ -297,6 +286,5 @@
             app:layout_constraintTop_toTopOf="@+id/ivEllipse" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-        </androidx.constraintlayout.widget.ConstraintLayout>
-    </ScrollView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -9,8 +9,8 @@
 
     <ImageView
         android:id="@+id/ivMovie"
-        android:layout_width="@dimen/fml_movie_width"
-        android:layout_height="@dimen/fml_movie_height"
+        android:layout_width="@dimen/fml_iv_movie_width"
+        android:layout_height="@dimen/fml_iv_movie_height"
         android:contentDescription="@string/fmd_image_of_the_film"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -20,8 +20,8 @@
         android:id="@+id/tvMovieTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/fml_movie_margin_start"
-        android:layout_marginTop="@dimen/fml_movie_margin_top"
+        android:layout_marginStart="@dimen/fml_tv_movie_margin_start"
+        android:layout_marginTop="@dimen/fml_tv_movie_margin_top"
         android:text="Гнев человеческий"
         android:textColor="@color/black"
         android:textSize="@dimen/simple_text"
@@ -43,9 +43,9 @@
 
     <ImageView
         android:id="@+id/star_1"
-        android:layout_width="@dimen/fml_star_width"
-        android:layout_height="@dimen/fml_star_height"
-        android:layout_marginTop="@dimen/fml_star_margin_top"
+        android:layout_width="@dimen/fml_iv_star_width"
+        android:layout_height="@dimen/fml_iv_star_height"
+        android:layout_marginTop="@dimen/fml_iv_star_margin_top"
         app:layout_constraintStart_toStartOf="@+id/tvMovieDescription"
         app:layout_constraintTop_toBottomOf="@+id/tvMovieDescription"
         app:srcCompat="@drawable/ic_fill_star"
@@ -53,10 +53,10 @@
 
     <ImageView
         android:id="@+id/ivStar_2"
-        android:layout_width="@dimen/fml_star_width"
-        android:layout_height="@dimen/fml_star_height"
+        android:layout_width="@dimen/fml_iv_star_width"
+        android:layout_height="@dimen/fml_iv_star_height"
         android:layout_marginStart="@dimen/fmd_beetwen_stars"
-        android:layout_marginTop="@dimen/fml_star_margin_top"
+        android:layout_marginTop="@dimen/fml_iv_star_margin_top"
         app:layout_constraintStart_toEndOf="@+id/star_1"
         app:layout_constraintTop_toBottomOf="@+id/tvMovieDescription"
         app:srcCompat="@drawable/ic_fill_star"
@@ -64,10 +64,10 @@
 
     <ImageView
         android:id="@+id/ivStar_3"
-        android:layout_width="@dimen/fml_star_width"
-        android:layout_height="@dimen/fml_star_height"
+        android:layout_width="@dimen/fml_iv_star_width"
+        android:layout_height="@dimen/fml_iv_star_height"
         android:layout_marginStart="@dimen/fmd_beetwen_stars"
-        android:layout_marginTop="@dimen/fml_star_margin_top"
+        android:layout_marginTop="@dimen/fml_iv_star_margin_top"
         app:layout_constraintStart_toEndOf="@+id/ivStar_2"
         app:layout_constraintTop_toBottomOf="@+id/tvMovieDescription"
         app:srcCompat="@drawable/ic_fill_star"
@@ -75,10 +75,10 @@
 
     <ImageView
         android:id="@+id/ivStar_4"
-        android:layout_width="@dimen/fml_star_width"
-        android:layout_height="@dimen/fml_star_height"
+        android:layout_width="@dimen/fml_iv_star_width"
+        android:layout_height="@dimen/fml_iv_star_height"
         android:layout_marginStart="@dimen/fmd_beetwen_stars"
-        android:layout_marginTop="@dimen/fml_star_margin_top"
+        android:layout_marginTop="@dimen/fml_iv_star_margin_top"
         app:layout_constraintStart_toEndOf="@+id/ivStar_3"
         app:layout_constraintTop_toBottomOf="@+id/tvMovieDescription"
         app:srcCompat="@drawable/ic_empty_star"
@@ -86,10 +86,10 @@
 
     <ImageView
         android:id="@+id/ivStar_5"
-        android:layout_width="@dimen/fml_star_width"
-        android:layout_height="@dimen/fml_star_height"
+        android:layout_width="@dimen/fml_iv_star_width"
+        android:layout_height="@dimen/fml_iv_star_height"
         android:layout_marginStart="@dimen/fmd_beetwen_stars"
-        android:layout_marginTop="@dimen/fml_star_margin_top"
+        android:layout_marginTop="@dimen/fml_iv_star_margin_top"
         app:layout_constraintStart_toEndOf="@+id/ivStar_4"
         app:layout_constraintTop_toBottomOf="@+id/tvMovieDescription"
         app:srcCompat="@drawable/ic_empty_star"

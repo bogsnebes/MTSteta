@@ -61,28 +61,4 @@ class MoviesDataSourceImpl : MoviesDataSource {
             imageUrl = "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/mbtN6V6y5kdawvAkzqN4ohi576a.jpg"
         ),
     )
-
-    override fun getMoviesLittle() = listOf(
-        MovieDto(
-            title = "Гнев человеческий",
-            description = "Эйч — загадочный и холодный на вид джентльмен, но внутри него пылает жажда справедливости. Преследуя...",
-            rateScore = 3,
-            ageRestriction = 18,
-            imageUrl = "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/5JP9X5tCZ6qz7DYMabLmrQirlWh.jpg"
-        ),
-        MovieDto(
-            title = "Мортал Комбат",
-            description = "Боец смешанных единоборств Коул Янг не раз соглашался проиграть за деньги. Он не знает о своем наследии...",
-            rateScore = 5,
-            ageRestriction = 18,
-            imageUrl = "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/pMIixvHwsD5RZxbvgsDSNkpKy0R.jpg"
-        ),
-        MovieDto(
-            title = "Упс... Приплыли!",
-            description = "От Великого потопа зверей спас ковчег. Но спустя полгода скитаний они готовы сбежать с него куда угодно...",
-            rateScore = 5,
-            ageRestriction = 6,
-            imageUrl = "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/546RNYy9Wi5wgboQ7EtD6i0DY5D.jpg"
-        )
-    )
 }
