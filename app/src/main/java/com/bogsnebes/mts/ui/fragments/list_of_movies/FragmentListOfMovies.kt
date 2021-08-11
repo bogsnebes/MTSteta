@@ -13,7 +13,7 @@ import androidx.recyclerview.widget.RecyclerView
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout
 import com.bogsnebes.mts.MainViewModel
 import com.bogsnebes.mts.R
-import com.bogsnebes.mts.data.movies.CategoriesDataSource
+import com.bogsnebes.mts.ui.MainActivity
 import com.bogsnebes.mts.ui.fragments.CategoryAdapter
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
@@ -53,10 +53,13 @@ class FragmentListOfMovies : Fragment() {
 
                 recyclerMovie.layoutManager = GridLayoutManager(view.context, 2)
                 recyclerMovie.adapter = MyMoviesAdapter(view.context, moviesResult) {
-                    parentFragmentManager.setFragmentResult(
-                        MOVIE_OPEN_KEY,
-                        bundleOf(MOVIE_OPEN_KEY to it)
-                    )
+//                    parentFragmentManager.setFragmentResult(
+//                        MOVIE_OPEN_KEY,
+//                        bundleOf(MOVIE_OPEN_KEY to it)
+//                    )
+                    val bundle = Bundle()
+                    bundle.putSerializable(MOVIE_OPEN_KEY, it)
+                    (activity as MainActivity).navController.navigate(R.id.action_fragmentListOfMovies_to_fragmentMovieDetails, bundle)
                 }
             }
         }
@@ -74,10 +77,9 @@ class FragmentListOfMovies : Fragment() {
 
                     recyclerMovie.layoutManager = GridLayoutManager(view.context, 2)
                     recyclerMovie.adapter = MyMoviesAdapter(view.context, moviesResult) {
-                        parentFragmentManager.setFragmentResult(
-                            MOVIE_OPEN_KEY,
-                            bundleOf(MOVIE_OPEN_KEY to it)
-                        )
+                        val bundle = Bundle()
+                        bundle.putSerializable(MOVIE_OPEN_KEY, it)
+                        (activity as MainActivity).navController.navigate(R.id.action_fragmentListOfMovies_to_fragmentMovieDetails, bundle)
                     }
                     swipeToRefresh.isRefreshing = false
                 }

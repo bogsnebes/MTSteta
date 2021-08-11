@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/fragmentListOfMovies">
+    <fragment
+        android:id="@+id/fragmentListOfMovies"
+        android:name="com.bogsnebes.mts.ui.fragments.list_of_movies.FragmentListOfMovies"
+        android:label="FragmentListOfMovies" >
+        <action
+            android:id="@+id/action_fragmentListOfMovies_to_fragmentMovieDetails"
+            app:destination="@id/fragmentMovieDetails" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentMovieDetails"
+        android:name="com.bogsnebes.mts.ui.fragments.movie_details.FragmentMovieDetails"
+        android:label="FragmentMovieDetails" >
+        <action
+            android:id="@+id/action_fragmentMovieDetails_to_fragmentListOfMovies"
+            app:destination="@id/fragmentListOfMovies" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentProfile"
+        android:name="com.bogsnebes.mts.ui.fragments.profile.FragmentProfile"
+        android:label="FragmentProfile" />
+</navigation>

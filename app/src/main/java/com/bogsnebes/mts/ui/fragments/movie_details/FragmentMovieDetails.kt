@@ -12,6 +12,7 @@ import androidx.fragment.app.Fragment
 import coil.load
 import com.bogsnebes.mts.R
 import com.bogsnebes.mts.data.dto.MovieDto
+import com.bogsnebes.mts.ui.fragments.list_of_movies.FragmentListOfMovies
 
 class FragmentMovieDetails : Fragment(R.layout.fragment_movie_details) {
 
@@ -48,7 +49,7 @@ class FragmentMovieDetails : Fragment(R.layout.fragment_movie_details) {
         description = view.findViewById(R.id.tvDescription)
         age = view.findViewById(R.id.tvAgeMovieDetails)
 
-        (arguments?.getSerializable(MOVIE) as? MovieDto)?.let { movieDto ->
+        (arguments?.getSerializable(FragmentListOfMovies.MOVIE_OPEN_KEY) as? MovieDto)?.let { movieDto ->
             background.load(movieDto.imageUrl)
             title.text = movieDto.title
 
