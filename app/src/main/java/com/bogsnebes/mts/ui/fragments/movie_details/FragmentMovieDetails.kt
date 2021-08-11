@@ -1,4 +1,4 @@
-package com.bogsnebes.mts
+package com.bogsnebes.mts.ui.fragments.movie_details
 
 import android.annotation.SuppressLint
 import android.os.Bundle
@@ -10,6 +10,7 @@ import android.widget.TextView
 import androidx.core.os.bundleOf
 import androidx.fragment.app.Fragment
 import coil.load
+import com.bogsnebes.mts.R
 import com.bogsnebes.mts.data.dto.MovieDto
 
 class FragmentMovieDetails : Fragment(R.layout.fragment_movie_details) {
@@ -65,11 +66,12 @@ class FragmentMovieDetails : Fragment(R.layout.fragment_movie_details) {
     }
 
     companion object {
-        val TAG: String = FragmentMovieDetails::class.java.simpleName
+        val TAG: kotlin.String = FragmentMovieDetails::class.java.simpleName
 
         fun newInstance(movieDto: MovieDto) = FragmentMovieDetails().apply {
             arguments = bundleOf(MOVIE to movieDto)
         }
-        const val MOVIE: String = "MOVIE"
+
+        const val MOVIE: kotlin.String = "MOVIE"
     }
 }

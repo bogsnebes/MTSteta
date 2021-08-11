@@ -1,8 +1,12 @@
-package com.bogsnebes.mts
+package com.bogsnebes.mts.ui
 
 import android.os.Bundle
 import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
+import com.bogsnebes.mts.ui.fragments.list_of_movies.FragmentListOfMovies
+import com.bogsnebes.mts.ui.fragments.movie_details.FragmentMovieDetails
+import com.bogsnebes.mts.ui.fragments.profile.FragmentProfile
+import com.bogsnebes.mts.R
 import com.bogsnebes.mts.data.dto.MovieDto
 import com.bogsnebes.mts.data.movies.MoviesDataSourceImpl
 import com.google.android.material.bottomnavigation.BottomNavigationView
@@ -54,9 +58,5 @@ class MainActivity : AppCompatActivity(R.layout.activity_main),
                 .commit()
         }
         return true
-    }
-
-    companion object {
-        val movieData = MoviesDataSourceImpl()
     }
 }

@@ -1,4 +1,4 @@
-package com.bogsnebes.mts
+package com.bogsnebes.mts.ui.fragments
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
+import com.bogsnebes.mts.R
 
 class CategoryAdapter(private val context: Context, private val listItems: List<String>) :
     RecyclerView.Adapter<CategoryAdapter.ViewHolder>() {

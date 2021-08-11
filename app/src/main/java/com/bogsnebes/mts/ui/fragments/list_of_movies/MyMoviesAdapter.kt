@@ -1,4 +1,4 @@
-package com.bogsnebes.mts
+package com.bogsnebes.mts.ui.fragments.list_of_movies
 
 import android.annotation.SuppressLint
 import android.content.Context
@@ -10,6 +10,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import coil.load
 import coil.transform.RoundedCornersTransformation
+import com.bogsnebes.mts.R
 import com.bogsnebes.mts.data.dto.MovieDto
 
 class MyMoviesAdapter(
