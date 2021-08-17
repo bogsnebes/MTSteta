@@ -1,5 +1,6 @@
 package com.bogsnebes.mts
 
+import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.bogsnebes.mts.data.dto.MovieDto
 import com.bogsnebes.mts.data.movies.CategoriesDataSource
@@ -9,19 +10,22 @@ class MainViewModel : ViewModel() {
     private val moviesData = MoviesDataSourceImpl()
     private val categoriesData = CategoriesDataSource()
 
-    fun getMoviesLittle(): List<MovieDto> {
-        return moviesData.getMoviesLittle()
+    val resultMovies = MutableLiveData<List<MovieDto>>()
+    val resultCategory = MutableLiveData<List<String>>()
+
+    fun getMoviesLittle() {
+        resultMovies.value = moviesData.getMoviesLittle()
     }
 
-    fun getMovies(): List<MovieDto> {
-        return moviesData.getMovies()
+    fun getMovies() {
+        resultMovies.value = moviesData.getMovies()
     }
 
-    fun getCategories(): List<kotlin.String> {
-        return categoriesData.getCategories()
+    fun getCategories() {
+        resultCategory.value = categoriesData.getCategories()
     }
 
-    fun getProfileCategories(): List<kotlin.String> {
-        return categoriesData.getProfileCategories()
+    fun getProfileCategories() {
+        resultCategory.value = categoriesData.getProfileCategories()
     }
 }

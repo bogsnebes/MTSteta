@@ -6,9 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.NavController
 import androidx.navigation.Navigation
 import com.bogsnebes.mts.R
-import com.bogsnebes.mts.data.dto.MovieDto
 import com.bogsnebes.mts.ui.fragments.list_of_movies.FragmentListOfMovies
-import com.bogsnebes.mts.ui.fragments.movie_details.FragmentMovieDetails
 import com.bogsnebes.mts.ui.fragments.profile.FragmentProfile
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
