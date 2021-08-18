@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!--        Переделать app and android на tools-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        tools:ignore="ScrollViewCount">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/ivBackgroundMovieDetails"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/fmd_background_movie_details"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ContentDescription"
+        tools:srcCompat="@drawable/stathemback" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="224dp"
+        android:background="@drawable/bg_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/ivBackgroundMovieDetails"
+        tools:ignore="MissingConstraints">
+
+
+        <ImageView
+            android:id="@+id/ivRectangle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="32dp"
+            android:contentDescription="@string/fmd_category"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_rectangle"
+            tools:ignore="VectorDrawableCompat" />
+
+        <ImageView
+            android:id="@+id/ivEllipse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="41dp"
+            android:layout_marginEnd="20dp"
+            android:contentDescription="@string/age"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_ellipse"
+            tools:ignore="VectorDrawableCompat" />
+
+        <TextView
+            android:id="@+id/tvDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="32dp"
+            android:gravity="top"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="@+id/ivRectangle"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="@string/fmd_date" />
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="14dp"
+            android:text="@string/fmd_name"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ivRectangle" />
+
+        <ImageView
+            android:id="@+id/ivStar"
+            android:layout_width="@dimen/fml_star_height"
+            android:layout_height="@dimen/fml_star_width"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="8dp"
+            android:contentDescription="@string/fmd_star"
+            android:scaleType="centerInside"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvName"
+            app:srcCompat="@drawable/ic_fill_star"
+            tools:ignore="VectorDrawableCompat" />
+
+        <ImageView
+            android:id="@+id/ivStar1"
+            android:layout_width="@dimen/fml_star_height"
+            android:layout_height="@dimen/fml_star_width"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="8dp"
+            android:contentDescription="@string/fmd_star"
+            app:layout_constraintStart_toEndOf="@+id/ivStar"
+            app:layout_constraintTop_toBottomOf="@+id/tvName"
+            app:srcCompat="@drawable/ic_fill_star"
+            tools:ignore="VectorDrawableCompat" />
+
+        <ImageView
+            android:id="@+id/ivStar2"
+            android:layout_width="@dimen/fml_star_height"
+            android:layout_height="@dimen/fml_star_width"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="8dp"
+            android:contentDescription="@string/fmd_star"
+            app:layout_constraintStart_toEndOf="@+id/ivStar1"
+            app:layout_constraintTop_toBottomOf="@+id/tvName"
+            app:srcCompat="@drawable/ic_fill_star"
+            tools:ignore="VectorDrawableCompat" />
+
+        <ImageView
+            android:id="@+id/ivStar3"
+            android:layout_width="@dimen/fml_star_height"
+            android:layout_height="@dimen/fml_star_width"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="8dp"
+            android:contentDescription="@string/fmd_star"
+            app:layout_constraintStart_toEndOf="@+id/ivStar2"
+            app:layout_constraintTop_toBottomOf="@+id/tvName"
+            app:srcCompat="@drawable/ic_fill_star"
+            tools:ignore="VectorDrawableCompat" />
+
+        <ImageView
+            android:id="@+id/ivStar4"
+            android:layout_width="@dimen/fml_star_height"
+            android:layout_height="@dimen/fml_star_width"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="8dp"
+            android:contentDescription="@string/fmd_empty_star"
+            app:layout_constraintStart_toEndOf="@+id/ivStar3"
+            app:layout_constraintTop_toBottomOf="@+id/tvName"
+            app:srcCompat="@drawable/ic_empty_star"
+            tools:ignore="VectorDrawableCompat" />
+
+        <TextView
+            android:id="@+id/tvDescription"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="20dp"
+            android:text="@string/fmd_description"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ivStar4" />
+
+        <TextView
+            android:id="@+id/tvActors"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="35dp"
+            android:text="@string/fmd_actors"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvDescription" />
+
+        <TextView
+            android:id="@+id/tvType"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="9dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="9dp"
+            android:layout_marginBottom="3dp"
+            android:lineSpacingExtra="0dp"
+            android:text="@string/fmd_type"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="@+id/ivRectangle"
+            app:layout_constraintEnd_toEndOf="@+id/ivRectangle"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/ivRectangle"
+            app:layout_constraintTop_toTopOf="@+id/ivRectangle"
+            app:layout_constraintVertical_bias="1.0"
+            tools:ignore="SmallSp" />
+
+        <HorizontalScrollView
+            android:id="@+id/horizontalScrollView"
+            android:layout_width="0dp"
+            android:layout_height="229dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="50dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvActors">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tvActorName2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:text="@string/fmd_actor_name_2"
+                    android:textColor="#000000"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="@+id/ivActorImage3"
+                    app:layout_constraintTop_toBottomOf="@+id/ivActorImage3" />
+
+                <ImageView
+                    android:id="@+id/ivActorImage2"
+                    android:layout_width="150dp"
+                    android:layout_height="196dp"
+                    android:layout_marginStart="10dp"
+                    android:background="@drawable/bg_image"
+                    android:contentDescription="@string/fmd_actor2"
+                    app:layout_constraintStart_toEndOf="@+id/ivActorImage1"
+                    app:srcCompat="@drawable/makkelani"
+                    tools:layout_editor_absoluteY="0dp" />
+
+                <TextView
+                    android:id="@+id/tvActorName1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:text="@string/fmd_actor_name_1"
+                    android:textColor="#000000"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="@+id/ivActorImage1"
+                    app:layout_constraintTop_toBottomOf="@+id/ivActorImage1" />
+
+                <TextView
+                    android:id="@+id/tvActorName3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:text="@string/fmd_actor_name_3"
+                    android:textColor="#000000"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="@+id/ivActorImage2"
+                    app:layout_constraintTop_toBottomOf="@+id/ivActorImage2" />
+
+                <ImageView
+                    android:id="@+id/ivActorImage1"
+                    android:layout_width="150dp"
+                    android:layout_height="196dp"
+                    android:background="@drawable/bg_image"
+                    android:contentDescription="@string/fmd_background_movie_details"
+                    app:srcCompat="@drawable/statem"
+                    tools:layout_editor_absoluteX="0dp"
+                    tools:layout_editor_absoluteY="0dp" />
+
+                <ImageView
+                    android:id="@+id/ivActorImage3"
+                    android:layout_width="150dp"
+                    android:layout_height="196dp"
+                    android:layout_marginStart="8dp"
+                    android:background="@drawable/bg_image"
+                    android:contentDescription="@string/fmd_actor3"
+                    app:layout_constraintStart_toEndOf="@+id/ivActorImage2"
+                    app:srcCompat="@drawable/harrnet"
+                    tools:layout_editor_absoluteY="0dp" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </HorizontalScrollView>
+
+        <TextView
+            android:id="@+id/tvAgeMovieDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/age"
+            android:textColor="#000000"
+            android:textSize="13.8sp"
+            app:layout_constraintBottom_toBottomOf="@+id/ivEllipse"
+            app:layout_constraintEnd_toEndOf="@+id/ivEllipse"
+            app:layout_constraintStart_toStartOf="@+id/ivEllipse"
+            app:layout_constraintTop_toTopOf="@+id/ivEllipse" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
