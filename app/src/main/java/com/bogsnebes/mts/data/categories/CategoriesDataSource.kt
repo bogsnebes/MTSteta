@@ -1,4 +1,4 @@
-package com.bogsnebes.mts.data.movies
+package com.bogsnebes.mts.data.categories
 
 class CategoriesDataSource {
     fun getCategories() = listOf("боевики", "драмы", "комедии", "артхаус", "мелодрамы")

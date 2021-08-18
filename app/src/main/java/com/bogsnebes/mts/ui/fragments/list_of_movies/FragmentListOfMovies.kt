@@ -13,7 +13,6 @@ import androidx.recyclerview.widget.RecyclerView
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout
 import com.bogsnebes.mts.MainViewModel
 import com.bogsnebes.mts.R
-import com.bogsnebes.mts.data.dto.MovieDto
 import com.bogsnebes.mts.ui.MainActivity
 import com.bogsnebes.mts.ui.fragments.CategoryAdapter
 import kotlinx.coroutines.Dispatchers
