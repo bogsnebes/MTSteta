@@ -51,9 +51,15 @@ class MyMoviesAdapter(
         @SuppressLint("SetTextI18n")
         fun bind(listItem: MovieDto) {
             title.text = listItem.title
-            description.text = listItem.description
-            age.text = listItem.ageRestriction.toString() + "+"
-            image.load(listItem.imageUrl) {
+            description.text = if (listItem.description.length > 150) listItem.description.substring(
+                0,
+                150
+            ) + "..." else listItem.description
+            if (listItem.ageRestriction)
+                age.text = "18+"
+            else
+                age.text = "0+"
+            image.load("https://image.tmdb.org/t/p/original/" + listItem.imageUrl) {
                 transformations(
                     RoundedCornersTransformation(
                         cornersRadius
@@ -61,11 +67,11 @@ class MyMoviesAdapter(
                 )
             }
 
-            for (i in 0 until listItem.rateScore) {
+            for (i in 0 until listItem.rateScore.toInt() / 2) {
                 star[i].load(R.drawable.ic_fill_star)
             }
 
-            for (i in listItem.rateScore until 5) {
+            for (i in listItem.rateScore.toInt() / 2 until 5) {
                 star[i].load(R.drawable.ic_empty_star)
             }
 
