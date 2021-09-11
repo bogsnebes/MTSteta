@@ -1,9 +1,10 @@
-package com.bogsnebes.mts.data.dto
+package com.bogsnebes.mts.data
 
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
 import com.bogsnebes.mts.App
+import com.bogsnebes.mts.data.dto.MovieDto
 import com.bogsnebes.mts.data.movies.MoviesDao
 
 @Database(entities = [MovieDto::class], version = 1)

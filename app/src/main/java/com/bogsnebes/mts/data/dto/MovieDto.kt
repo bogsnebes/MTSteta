@@ -3,6 +3,7 @@ package com.bogsnebes.mts.data.dto
 import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
+import com.google.gson.annotations.SerializedName
 import java.io.Serializable
 import kotlin.String
 
@@ -13,8 +14,12 @@ data class MovieDto(
     val id: Long? = null,
 
     val title: String,
+    @SerializedName("overview")
     val description: String,
-    val rateScore: Int,
-    val ageRestriction: Int,
+    @SerializedName("vote_average")
+    val rateScore: Float,
+    @SerializedName("adult")
+    val ageRestriction: Boolean,
+    @SerializedName("poster_path")
     val imageUrl: String
 ) : Serializable

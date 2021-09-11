@@ -12,7 +12,7 @@ interface MoviesDao {
     @Query("SELECT * FROM films LIMIT 3")
     fun getMoviesLittle(): List<MovieDto>
 
-    @Insert
+    @Insert(onConflict = OnConflictStrategy.REPLACE)
     fun insertAll(film: List<MovieDto>)
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)

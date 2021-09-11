@@ -43,8 +43,7 @@ class FragmentListOfMovies : Fragment() {
 
         lifecycleScope.launch {
             mainViewModel.getCategories()
-            mainViewModel.getMoviesLittle()
-            Thread.sleep(2000L)
+            mainViewModel.getMovies()
             withContext(Dispatchers.Main) {
                 recyclerMovie = view.findViewById(R.id.rvMovie)
                 recyclerCategory = view.findViewById(R.id.rvCategory)
@@ -70,7 +69,7 @@ class FragmentListOfMovies : Fragment() {
         swipeToRefresh.setOnRefreshListener {
             lifecycleScope.launch {
                 mainViewModel.getCategories()
-                mainViewModel.getMovies()
+                mainViewModel.getMoviesOnline()
                 Thread.sleep(2000L)
                 withContext(Dispatchers.Main) {
                     recyclerMovie = view.findViewById(R.id.rvMovie)
